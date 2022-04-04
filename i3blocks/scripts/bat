@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ acpi | awk '{print $3" "$4}' | sed 's/,/ /g'
+
